@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - My Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <!-- Font include -->
+     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<body id="index" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!-- /Navigation bar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navContainer">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+        <a class="navbar-brand" href="#index">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ./Navigation bar -->
+
+  <!-- /Jumbotron profile -->
+  <div class="jumbotron text-center">
+    <img id="profilePhoto" src="https://i.imgur.com/7WXy3NG.jpg" class="img-circle img-responsive">
+    <div class="row">
+      <div class="col-lg-12 social-buttons-div">
+
+        <!-- Facebook button -->
+        <a id="facebook-button" class="btn btn-default social-button" href="https://www.facebook.com/johnny.ieong.3" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <!-- Github button -->
+        <a id="github-button" class="btn btn-default social-button" href="https://www.instagram.com/ieonghiofong/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <!-- CodePen button -->
+        <a id="codepen-button" class="btn btn-default social-button" href="https://codepen.io/your-work" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+
+        
+      </div>
+    </div>
+    <h1>Ieong Hio Fong</h1>
+    <p>Johnny Ieong</p>
+  </div>
+  <!-- ./Jumbotron profile -->
+
+  <!-- /About me -->
+  <div id="aboutme" class="container-fluid partContainer">
+    <div class="row">
+      <div class="col-lg-6 innerLinks">
+        <h2>About me</h2>
+        <p>I am a Form5 student from Macau. Currently aimed to study in IFT Macau and dream to become a chef in the future. <br/><br/> You can check this website along with my <a href="#cv">cv</a>          to get to know me better.<br/><br/> 
+        </p>
+        <br/><br/>
+      </div>
+      <div class="col-lg-6 centerize">
+        <img id="greekFlag" src="data:image/png;base64,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">
+      </div>
+    </div>
+  </div>
+  <!-- ./About me -->
+  
+  <!-- /CV -->
+  <div id="cv" class="container-fluid partContainer">
+    <div class="row">
+      <div class="col-lg-6 centerize">
+        <img src="https://dl.dropbox.com/s/r0w3w0h7blt0fj4/cv.png?dl=0">
+      </div>
+      <div class="col-lg-6 centerize">
+        <h2>CV</h2>
+        <button id="cvButton" data-toggle="collapse" data-target="#demo" class="btn btn-lg"><h3>Take a look at my CV-Resume</h3>
+           <i class="glyphicon glyphicon-large glyphicon-circle-arrow-down"></i></button>
+        <div id="demo" class="collapse centerize">
+          <!-- PDF display -->
+          <br/>
+          <object id="pdfDisplay" data="https://docs.google.com/document/d/1sZbe4K0TnDcn5SMMr1lP1IQxnec8pnwi/edit" type="application/pdf">
+               <embed src="https://docs.google.com/document/d/1sZbe4K0TnDcn5SMMr1lP1IQxnec8pnwi/edit">This browser does not support PDFs. <br/>Please download the PDF to view it: <br/>
+                 <a href="https://docs.google.com/document/d/1sZbe4K0TnDcn5SMMr1lP1IQxnec8pnwi/edit">Download PDF</a>.</p>
+               </embed>
+             </object>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./CV -->
+
+  <!-- /Education -->
+  <div id="education" class="container-fluid partContainer">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Education</h2>
+        <h3>Colégio Diocesano de São José (5ª) (2009-Present)</h3>
+        <p>Expected graduation in July 2024<br/>
+          <i></i></p>
+      </div>
+      <div class="col-lg-6 centerize">
+        <br/><img src="data:image/png;base64,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" alt="Aristotle University of Thessaloniki">
+      </div>
+    </div>
+  </div>
+  <!-- ./Education -->
+
+  <!-- /Experience -->
+<div id="experience" class="container-fluid text-center partContainer">
+    <h2>Passions</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <div>
+            <img src="https://i.imgur.com/oWJhXxP.jpg">
+            <h4>Singing<br/></h4>
+          </div>
+        </div>
+
+        <div class="item">
+          <div>
+            <img src="https://i.imgur.com/CBKj1Vd.jpg">
+            <h4>Volleyball<br/>I joined the volleyball school team</h4>
+          </div>
+        </div>
+
+        <div class="item">
+          <div>
+            <img src="https://i.imgur.com/NWxIjSM.jpg" alt="Aristotle University of Thessaloniki">
+            <h4>Video Games</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Previous carousel button -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <!-- Next carousel button -->
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </div>
+  <!-- ./Experience -->
+
+  
+
+  <!-- /Contact me -->
+  <div id="contactme" class="container-fluid centerize partContainer">
+    <h2>Contact me</h2><br/><br/>
+    <div class="row ">
+      <div class="col-lg-12">
+        <p/>You can contact me at:
+        <p><span class="glyphicon glyphicon-envelope"></span>
+          <a href="johnnyieong321@gmail.com subject=Let's%20hire">johnnyieong321@gmail.com</a></p>
+        <p><span class="glyphicon glyphicon-phone"></span> +85365992272</p>
+      </div>
+    </div>
+  </div>
+  <!-- ./Contact me -->
+  <hr class="hrContainer" />
+
+  <!-- /Footer -->
+  <footer class="container-fluid text-center">
+    <a href="#index" title="To Top" data-toggle="tooltip">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Sampled from <a href="#"><em>Anastasios Mpoletis</em></a></p>
+  </footer>
+  <!-- ./Footer -->
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
